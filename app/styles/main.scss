@@ -1,7 +1,8 @@
 // bower:scss
-@import "bower_components/bootstrap/scss/bootstrap.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-@import "global.scss";
-@import "header.scss";
-@import "fonts.scss";
 @import "variables.scss";
+@import "_global.scss";
+@import "_fonts.scss";
+@import "_header.scss";
+@import "_block-404.scss";

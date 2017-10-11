@@ -1,0 +1,55 @@
+.block-404 {
+  overflow: hidden;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/svg/m404.svg') center no-repeat;
+  background-size: cover;
+  font-family: 'Proxima Nova', sans-serif;
+  &__box {
+    position: relative;
+    text-align: center;
+  }
+  &__number {
+    font-weight: 800;
+    font-size: 160px;
+    line-height: 1;
+    color: #fff;
+  }
+  &__text {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  &__mark {
+    font-weight: 300;
+  }
+  &__btn {
+    color: #fff;
+    padding: 6px 50px;
+    font-weight: 300;
+    position: static;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-align: center;
+    &:hover {
+      color: #45ACE1;
+      background: #fff;
+    }
+  }
+  @media screen and (min-width: 321px) {
+    background: url('../images/svg/t404.svg') center no-repeat;
+    background-size: cover;
+  }
+  @media screen and (min-width: 768px) {
+    background: url('../images/svg/d404.svg') center no-repeat;
+    background-size: cover;
+  }
+}
