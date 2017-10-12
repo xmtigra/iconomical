@@ -1,16 +1,28 @@
-@import "variables.scss";
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+@import "_normalize.scss";
+@import "_fonts.scss";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
-
-/* Space out content a bit */
+html {
+  height: 100%;
+}
 
 body {
-  font-family: Proxima Nova;
+  height: 100%;
+  color: #474747;
+  min-width: 32px;
+  font-size: 14px;
+  line-height: 1.1242;
+  background-color: #FAFAFA;
+  font-family: 'Proxima Nova', sans-serif;
 }
 
 a {
@@ -36,26 +48,80 @@ a {
   justify-content: space-between;
 }
 
-@media #{$desktop} {
-  .container {
-    min-width: 1170px !important;
-    max-width: 1170px !important;
-    padding: 0;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 576px) {
+    width: 540px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 720px;
+  }
+  @media screen and (min-width: 992px) {
+    width: 960px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1140px;
   }
 }
 
-@media #{$tablet} {
-  .container {
-    min-width: 769px !important;
-    max-width: 769px !important;
-    padding: 0;
+.clearfix, .container {
+  zoom: 1;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
   }
 }
 
-@media #{$mobile} {
-  .container {
-    min-width: 320px !important;
-    max-width: 320px !important;
-    padding: 0;
+.visually-hidden {
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+.hidden {
+  display: none
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.text {
+  &-left {
+    text-align: left
   }
+  &-center {
+    text-align: center
+  }
+  &-right {
+    text-align: right
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
