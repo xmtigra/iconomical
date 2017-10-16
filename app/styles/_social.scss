@@ -15,6 +15,10 @@
     background-size: 15px 15px;
     background-repeat: no-repeat;
     transition: background-color 0.2s;
+    &:focus {
+      box-shadow: 0 0 0 1px #54AAE5;
+      outline: none;
+    }
     &:not(:last-child) {
       margin-right: 3px;
     }

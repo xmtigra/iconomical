@@ -1,3 +1,90 @@
 .form-footer {
+  width: 270px;
+  padding: 28px 20px 7px;
+  margin: 0 auto;
   position: relative;
+  &__title {
+    color: #4DA5E2;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__name {
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: #F7F7F7;
+    margin-bottom: 10px;
+    &:focus {
+      box-shadow: 0 0 0 1px #54AAE5;
+      outline: none;
+    }
+  }
+  &__email {
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    font-weight: 300;
+    border-radius: 5px;
+    text-align: center;
+    background: #F7F7F7;
+    margin-bottom: 10px;
+    &:focus {
+      box-shadow: 0 0 0 1px #54AAE5;
+      outline: none;
+    }
+  }
+  &__subscribe {
+    border: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #54AAE5;
+    text-transform: uppercase;
+    &:focus {
+      box-shadow: 0 0 0 1px #54AAE5;
+      outline: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: initial;
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__name {
+      width: 230px;
+      margin-right: 10px;
+      text-align: left;
+    }
+    &__email {
+      text-align: left;
+      width: 230px;
+      margin-right: 10px;
+    }
+    &__subscribe {
+      width: 125px;
+    }
+  }
 }
+
+

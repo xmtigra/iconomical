@@ -1,4 +1,27 @@
 .footer {
-  position: relative;
   background: #fff;
+  position: relative;
+  &__logo {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    min-height: 140px;
+    &__logo {
+      display: block;
+      padding-top: 40px;
+      &-img {
+        height: 50px;
+        max-width: 175px;
+      }
+    }
+    &__social {
+      padding-top: 47px;
+      margin: 0 !important;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }
