@@ -1,0 +1,67 @@
+.social {
+  font-size: 0;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  &__item {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: lightgrey;
+    background-position: center;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    transition: background-color 0.2s;
+    &:not(:last-child) {
+      margin-right: 3px;
+    }
+    &:not(:first-child) {
+      margin-left: 3px;
+    }
+    &_twiter {
+      background-image: url('../images/svg/social-tw.svg');
+      &-color, &:hover {
+        background-color: #00CCFF;
+      }
+    }
+    &_telegram {
+      background-image: url('../images/svg/social-telegram.svg');
+      &-color, &:hover {
+        background-color: #2CA7E2;
+      }
+    }
+    &_facebook {
+      background-image: url('../images/svg/social-facebook.svg');
+      &-color, &:hover {
+        background-color: #2E5A9B;
+      }
+    }
+    &_vk {
+      background-image: url('../images/svg/social-vk.svg');
+      &-color, &:hover {
+        background-color: #5F83A9;
+      }
+    }
+    &_medium {
+      background-image: url('../images/svg/social-medium.svg');
+      &-color, &:hover {
+        background-color: #03a87c;
+      }
+    }
+    &_google-plus {
+      background-image: url('../images/svg/social-google-plus.svg');
+      &-color, &:hover {
+        background-color: #3E3C3D;
+      }
+    }
+    &_pinterest {
+      background-image: url('../images/svg/social-pinterest.svg');
+      &-color, &:hover {
+        background-color: #DF0300;
+      }
+    }
+  }
+}
