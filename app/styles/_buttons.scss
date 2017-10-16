@@ -1,0 +1,19 @@
+@import "variables.scss";
+.buttons{
+	text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+	.button{
+		padding: 8px 20px;
+	    border-radius: 5px;
+	    &_red {
+	      background-color: red;
+	    }
+	    &_blue {
+	      background-color: blue;
+	    }
+	    &_grey {
+	      background-color: grey;
+	    }
+	}
+}
