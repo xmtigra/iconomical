@@ -1,19 +1,55 @@
 @import "variables.scss";
 
-.button{
-	text-transform: uppercase;
-    color: white;
-    font-size: 12px;
-	padding: 5px 15px;
+.button {
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+  min-width: 85px;
+  border-radius: 5px;
+  margin-left: 5px;
+  line-height: 27px;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  transition: background-color 0.2s;
+  &_red {
+    background-color: #E68E94;
+    &:hover {
+      background-color: darken(#E68E94, 10%);
+    }
+  }
+  &_blue {
+    background-color: #56A2D5;
+    &:hover {
+      background-color: darken(#56A2D5, 10%);
+    }
+  }
+  &_grey {
+    background-color: #e9e9e9;
+    &:hover {
+      background-color: darken(#e9e9e9, 10%);
+    }
+  }
+  &_transparent {
+    width: 220px;
+    height: 50px;
+    line-height: 52px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(#787878, 0.61);
+    border: 1px solid rgba(#2F2F2F, 0.09);
     border-radius: 5px;
-    margin-left: 5px;
-    &_red {
-      background-color: #E68E94;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    display: block;
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: background-color, color, border-color 0.2s;
+    &:hover {
+      background-color: #71DBC9;
+      cursor: pointer;
+      color: #fff;
+      border-color: #71DBC9;
     }
-    &_blue {
-      background-color: #56A2D5;
-    }
-    &_grey {
-      background-color: #e9e9e9;
-    }
+  }
 }
