@@ -1,26 +1,31 @@
 @import "variables.scss";
+
 .header {
-  min-height: 200px;
-  background: linear-gradient(135deg, #308CD0, #4BC3EF), url("../images/header_bg.png") center repeat-x;
-  background-blend-mode: overlay;
-  padding-top: 45px;
+  background: #4198D4;
   margin-bottom: 20px;
+  padding: 23px 0;
   &__logo {
-    display: inline-block;
+    width: 104px;
     overflow: hidden;
+    display: inline-block;
     img {
       width: 100%;
     }
   }
+  &__hamburger {
+    width: 15px;
+    height: 34px;
+    background: url("../images/svg/hamburger.svg") center no-repeat;
+    background-size: 22px 15px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   &__buttons {
-    margin-left: 93px;
-    margin-top: 20px;
+    display: none;
   }
   &__menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 38px;
+    display: none;
   }
   &__language {
     display: flex;
@@ -41,6 +46,7 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    font-size: 16px;
     li {
       margin-right: 30px;
       &:last-child {
@@ -51,7 +57,6 @@
       display: block;
       text-transform: uppercase;
       color: white;
-      font-size: 16px;
       &:hover {
         color: white;
       }
@@ -75,26 +80,23 @@
       }
     }
   }
-}
-
-@media screen and (min-width: 768px) {
-  .header {
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
     min-height: 154px;
     max-height: 154px;
     background: linear-gradient(135deg, #308CD0, #4BC3EF), url("../images/header_bg.png") center repeat-x;
     background-blend-mode: overlay;
     background-size: 150%;
     &__logo {
-      min-width: 117px;
-      overflow: hidden;
-      margin-top: -10px;
-      img {
-        width: 100%;
-      }
+      width: 117px;
+    }
+    &__hamburger {
+      display: none;
     }
     &__buttons {
-      margin-left: 35px;
-      margin-top: 5px;
+      display: block;
+      margin-top: 0;
+      padding: 8px 0 0 0;
     }
     &__button {
       font-size: 10px;
@@ -102,18 +104,40 @@
       border: 1px solid white;
     }
     &__nav {
+      font-size: 10px;
+      padding-top: 13px;
       li {
         margin-right: 17px;
       }
-      a {
-        font-size: 10px;
-      }
     }
     &__language {
+      padding-top: 13px;
       font-size: 10px;
     }
     &__menu {
       margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__logo {
+      width: 175px;
+    }
+    &__buttons {
+      padding: 20px 0 0 0;
+    }
+    &__button {
+      font-size: 14px;
+    }
+    &__nav {
+      padding-top: 8px;
+      font-size: 16px;
+    }
+    &__language {
+      padding-top: 8px;
+      font-size: 16px;
     }
   }
 }

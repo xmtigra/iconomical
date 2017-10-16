@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="12942 -2350 104 30.7">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        font-size: 16px;
+        font-family: ProximaNova-Black, Proxima Nova;
+        letter-spacing: 0.021em;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        font-family: ProximaNova-Regular, Proxima Nova;
+        font-weight: 400;
+      }
+
+      .cls-3 {
+        font-size: 9px;
+        font-family: ProximaNova-Light, Proxima Nova;
+        font-weight: 300;
+        letter-spacing: 0.061em;
+      }
+    </style>
+  </defs>
+  <g id="Group_474" data-name="Group 474" transform="translate(1023.45 -1008.61)">
+    <text id="ICONOMICAL" class="cls-1" transform="translate(11918.55 -1326.39)"><tspan x="0" y="0">ICO</tspan><tspan class="cls-2" y="0">NOMICAL</tspan></text>
+    <text id="TRACKING_ICO_EVENTS" data-name="TRACKING ICO EVENTS" class="cls-3" transform="translate(11918.55 -1313.691)"><tspan x="0" y="0">TRACKING ICO EVENTS</tspan></text>
+  </g>
+</svg>
