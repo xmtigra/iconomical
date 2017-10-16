@@ -63,6 +63,10 @@
       box-shadow: 0 0 0 1px #54AAE5;
       outline: none;
     }
+    &:hover {
+      background: #71DBC9;
+      cursor: pointer;
+    }
   }
   @media screen and (min-width: 768px) {
     width: initial;
