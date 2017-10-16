@@ -1,0 +1,43 @@
+.sorting {
+  display: flex;
+  font-size: 16px;
+  overflow: hidden;
+  line-height: 20px;
+  border-radius: 8px;
+  padding: 12px 30px;
+  align-items: center;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  &__name {
+    text-transform: none;
+    padding-right: 10px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: flex-start;
+  }
+  &__item {
+    margin: 0;
+    color: #7b7b7b;
+    cursor: pointer;
+    padding: 0 5px 0;
+    list-style-type: none;
+    &:not(:last-child):after {
+      content: '|';
+      color: #7b7b7b;
+      padding: 0 0 0 10px;
+    }
+    &_active {
+      font-weight: 600;
+      color: #3694DB;
+    }
+    &:hover {
+      color: #3694DB;
+    }
+  }
+}
