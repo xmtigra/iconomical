@@ -124,9 +124,9 @@
     padding-top: 40px;
     min-height: 154px;
     max-height: 154px;
-    background: linear-gradient(135deg, #308CD0, #4BC3EF), url("../images/header_bg.png") center repeat-x;
+    background: linear-gradient(135deg, #308CD0, #4BC3EF), url("../images/header_bg2.png") center repeat-x;
     background-blend-mode: overlay;
-    background-size: 1300px;
+    background-size: 100%, 175px;
     padding: 0;
     padding-top: 40px;
     &__logo {
@@ -188,7 +188,6 @@
     }
   }
   @media screen and (min-width: 1200px) {
-    background-size: 1550px;
     min-height: 175px;
     &__logo {
       width: 175px;
