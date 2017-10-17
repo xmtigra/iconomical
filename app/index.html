@@ -21,320 +21,421 @@
 </head>
 
 <body>
-<!--[if IE]>
+  <!--[if IE]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
 
-<div class="header">
-  <div class="container ">
-    <div class="flex flex-row">
-      <a href="" class="header__logo">
-        <img src="images/svg/logo3.svg" alt="Iconomical logo">
-      </a>
-      <!-- не переписувати блок currency - хіба що обгоратти -->
-      <div class="currency">
-        <div class="currency__item">
-          <div class="currency__name">BTC</div>
-          <div class="currency__price">$ 4,006.46</div>
-          <div class="currency__change currency__change_negative">-0.04%</div>
+  <div class="header">
+    <div class="container ">
+      <div class="flex flex-row">
+        <a href="" class="header__logo">
+          <img src="images/svg/logo3.svg" alt="Iconomical logo">
+        </a>
+        <div class="header__hamburger"></div>
+        <!-- не переписувати блок currency - хіба що обгоратти -->
+        <div class="currency">
+          <div class="currency__item">
+            <div class="currency__name">BTC</div>
+            <div class="currency__price">$ 4,006.46</div>
+            <div class="currency__change currency__change_negative">-0.04%</div>
+          </div>
+          <div class="currency__item">
+            <div class="currency__name">BCH</div>
+            <div class="currency__price">$ 525.05</div>
+            <div class="currency__change currency__change_positive">1.02%</div>
+          </div>
+          <div class="currency__item">
+            <div class="currency__name">ETH</div>
+            <div class="currency__price">$ 289.09</div>
+            <div class="currency__change currency__change_positive">2.51%</div>
+          </div>
+          <div class="currency__item">
+            <div class="currency__name">DEF</div>
+            <div class="currency__price">$ 8889.09</div>
+            <div class="currency__change currency__change_positive">92.51%</div>
+          </div>
         </div>
-        <div class="currency__item">
-          <div class="currency__name">BCH</div>
-          <div class="currency__price">$ 525.05</div>
-          <div class="currency__change currency__change_positive">1.02%</div>
+        <!-- не переписувати блок currency - хіба що обгоратти -->
+        <div class="header__buttons">
+          <a href="" class="header__button header__button_post">Submit post</a>
+          <a href="" class="header__button header__button_event">Submit event</a>
         </div>
-        <div class="currency__item">
-          <div class="currency__name">ETH</div>
-          <div class="currency__price">$ 289.09</div>
-          <div class="currency__change currency__change_positive">2.51%</div>
-        </div>
-        <div class="currency__item">
-          <div class="currency__name">DEF</div>
-          <div class="currency__price">$ 8889.09</div>
-          <div class="currency__change currency__change_positive">92.51%</div>
+
+
+      </div>
+      <div class="header__menu">
+        <nav>
+          <ul class="header__nav">
+            <li>
+              <a href="">Main</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">KNOWLEDGE BASE</a>
+            </li>
+            <li>
+              <a href="">ABOUT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__language">
+          <div>LANGUAGE:</div>
+          <a href="#">RU</a>|
+          <a href="#">ENG</a>
         </div>
       </div>
-      <!-- не переписувати блок currency - хіба що обгоратти -->
-      <div class="header__buttons">
+    </div>
+    <div class="header__mobile-menu">
+      <div class="mobile-currency">
+        <div class="mobile-currency__item">
+          <div class="mobile-currency__name">BTC</div>
+          <div class="mobile-currency__price">$ 4,006.46</div>
+          <div class="mobile-currency__change mobile-currency__change_negative">-0.04%</div>
+        </div>
+        <div class="mobile-currency__item">
+          <div class="mobile-currency__name">BCH</div>
+          <div class="mobile-currency__price">$ 525.05</div>
+          <div class="mobile-currency__change mobile-currency__change_positive">1.02%</div>
+        </div>
+        <div class="mobile-currency__item">
+          <div class="mobile-currency__name">ETH</div>
+          <div class="mobile-currency__price">$ 289.09</div>
+          <div class="mobile-currency__change mobile-currency__change_positive">2.51%</div>
+        </div>
+        <div class="mobile-currency__item">
+          <div class="mobile-currency__name">DEF</div>
+          <div class="mobile-currency__price">$ 8889.09</div>
+          <div class="mobile-currency__change mobile-currency__change_positive">92.51%</div>
+        </div>
+      </div>
+      <nav>
+        <ul class="header__nav">
+          <li>
+            <a href="">Main</a>
+          </li>
+          <li>
+            <a href="">Blog</a>
+          </li>
+          <li>
+            <a href="">KNOWLEDGE BASE</a>
+          </li>
+          <li>
+            <a href="">ABOUT</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__mobile-buttons">
         <a href="" class="header__button header__button_post">Submit post</a>
         <a href="" class="header__button header__button_event">Submit event</a>
       </div>
-
-      <div class="header__hamburger"></div>
-    </div>
-    <div class="header__menu">
-      <nav>
-        <ul class="header__nav">
-          <li><a href="">Main</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">KNOWLEDGE BASE</a></li>
-          <li><a href="">ABOUT</a></li>
-        </ul>
-      </nav>
-      <div class="header__language">
+      <div class="header__mobile-language">
         <div>LANGUAGE:</div>
         <a href="#">RU</a>|
         <a href="#">ENG</a>
       </div>
     </div>
   </div>
-</div>
-<div class="main">
-  <div class="container ">
-    <!-- sorting -->
-    <div class="sorting">
-      <div class="sorting__name">Sort by:</div>
-      <div class="sorting__list">
-        <a class="sorting__item sorting__item_active">all</a>
-        <a class="sorting__item">current</a>
-        <a class="sorting__item">upcoming</a>
-        <a class="sorting__item">past</a>
+  <div class="main">
+    <div class="container ">
+      <!-- sorting -->
+      <div class="sorting">
+        <div class="sorting__name">Sort by:</div>
+        <div class="sorting__list">
+          <a class="sorting__item sorting__item_active">all</a>
+          <a class="sorting__item">current</a>
+          <a class="sorting__item">upcoming</a>
+          <a class="sorting__item">past</a>
+        </div>
       </div>
+      <!-- end sorting -->
+
+      <div class="event-list event-list_3">
+        <div class="event">
+          <div class="event__buttons">
+            <a href="" class="button button_red">SCAM</a>
+            <a href="" class="button button_blue">CURRENT</a>
+          </div>
+          <div class="event__icon">
+            <img src="images/png/image_1.png">
+          </div>
+          <div class="event__name event__line">Decentralized Loan Collateral</div>
+          <div class="event__info event__line">
+            <div class="event__info_base"> Base: Ethereum |
+              <span>Whitepaper </span>
+            </div>
+            <div class="event__info_site"> Website:
+              <a href="">http://www.theflik.io/ </a>
+            </div>
+          </div>
+          <div class="event__description event__line">End-to-end entertainment ecosystem for creative projects to be funded, filmed, distributed, and paid
+          </div>
+          <div class="event__ico event__line">
+            <span>ICO:</span> 540,000,000 FLiK of 600,000,000
+            <br> 20/08/2017 00:00:00 UTC - 20/09/2017
+          </div>
+          <div class="event__down clearfix">
+            <div class="event__down__timer active">
+              <div class="event__down__timer_day event__down__timer_btn">
+                <b>12 </b> days</div>
+              <div class="event__down__timer_hour event__down__timer_btn">
+                <b>08 </b>hrs</div>
+              <div class="event__down__timer_min event__down__timer_btn">
+                <b>56 </b> min</div>
+            </div>
+            <a href="" class="event__down__more">More</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event__buttons">
+            <a href="" class="button button_red">SCAM</a>
+            <a href="" class="button button_blue">CURRENT</a>
+          </div>
+          <div class="event__icon">
+            <img src="images/png/image_2.png">
+          </div>
+          <div class="event__name event__line">VIBEHub</div>
+          <div class="event__info event__line">
+            <div class="event__info_base"> Base: Ethereum |
+              <span>Whitepaper </span>
+            </div>
+            <div class="event__info_site"> Website:
+              <a href="">http://www.theflik.io/ </a>
+            </div>
+          </div>
+          <div class="event__description event__line">End-to-end entertainment ecosystem for creative projects to be funded, filmed, distributed, and paid
+          </div>
+          <div class="event__ico event__line">
+            <span>ICO:</span> 540,000,000 FLiK of 600,000,000
+            <br> 20/08/2017 00:00:00 UTC - 20/09/2017
+          </div>
+          <div class="event__down clearfix">
+            <div class="event__down__timer active">
+              <div class="event__down__timer_day event__down__timer_btn">
+                <b>02 </b> days</div>
+              <div class="event__down__timer_hour event__down__timer_btn">
+                <b>08 </b>hrs</div>
+              <div class="event__down__timer_min event__down__timer_btn">
+                <b>56 </b> min</div>
+            </div>
+            <a href="" class="event__down__more">More</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event__buttons">
+            <a href="" class="button button_red">SCAM</a>
+            <a href="" class="button button_blue">CURRENT</a>
+          </div>
+          <div class="event__icon">
+            <img src="images/png/image_3.png">
+          </div>
+          <div class="event__name event__line">Decentralized Loan Collateral</div>
+          <div class="event__info event__line">
+            <div class="event__info_base"> Base: Ethereum |
+              <span>Whitepaper </span>
+            </div>
+            <div class="event__info_site"> Website:
+              <a href="">http://www.theflik.io/ </a>
+            </div>
+          </div>
+          <div class="event__description event__line">End-to-end entertainment ecosystem for creative projects to be funded, filmed, distributed, and paid
+          </div>
+          <div class="event__ico event__line">
+            <span>ICO:</span> 540,000,000 FLiK of 600,000,000
+            <br> 20/08/2017 00:00:00 UTC - 20/09/2017
+          </div>
+          <div class="event__down clearfix">
+            <div class="event__down__timer active">
+              <div class="event__down__timer_day event__down__timer_btn">
+                <b>12 </b> days</div>
+              <div class="event__down__timer_hour event__down__timer_btn">
+                <b>08 </b>hrs</div>
+              <div class="event__down__timer_min event__down__timer_btn">
+                <b>56 </b> min</div>
+            </div>
+            <a href="" class="event__down__more">More</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event__buttons">
+            <a href="" class="button button_red">SCAM</a>
+            <a href="" class="button button_blue">CURRENT</a>
+          </div>
+          <div class="event__icon">
+            <img src="images/png/image_1.png">
+          </div>
+          <div class="event__name event__line">Decentralized Loan Collateral</div>
+          <div class="event__info event__line">
+            <div class="event__info_base"> Base: Ethereum |
+              <span>Whitepaper </span>
+            </div>
+            <div class="event__info_site"> Website:
+              <a href="">http://www.theflik.io/ </a>
+            </div>
+          </div>
+          <div class="event__description event__line">End-to-end entertainment ecosystem for creative projects to be funded, filmed, distributed, and paid
+          </div>
+          <div class="event__ico event__line">
+            <span>ICO:</span> 540,000,000 FLiK of 600,000,000
+            <br> 20/08/2017 00:00:00 UTC - 20/09/2017
+          </div>
+          <div class="event__down clearfix">
+            <div class="event__down__timer active">
+              <div class="event__down__timer_day event__down__timer_btn">
+                <b>12 </b> days</div>
+              <div class="event__down__timer_hour event__down__timer_btn">
+                <b>08 </b>hrs</div>
+              <div class="event__down__timer_min event__down__timer_btn">
+                <b>56 </b> min</div>
+            </div>
+            <a href="" class="event__down__more">More</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event__buttons">
+            <a href="" class="button button_red">SCAM</a>
+            <a href="" class="button button_blue">CURRENT</a>
+          </div>
+          <div class="event__icon">
+            <img src="images/png/image_2.png">
+          </div>
+          <div class="event__name event__line">VIBEHub</div>
+          <div class="event__info event__line">
+            <div class="event__info_base"> Base: Ethereum |
+              <span>Whitepaper </span>
+            </div>
+            <div class="event__info_site"> Website:
+              <a href="">http://www.theflik.io/ </a>
+            </div>
+          </div>
+          <div class="event__description event__line">End-to-end entertainment ecosystem for creative projects to be funded, filmed, distributed, and paid
+          </div>
+          <div class="event__ico event__line">
+            <span>ICO:</span> 540,000,000 FLiK of 600,000,000
+            <br> 20/08/2017 00:00:00 UTC - 20/09/2017
+          </div>
+          <div class="event__down clearfix">
+            <div class="event__down__timer active">
+              <div class="event__down__timer_day event__down__timer_btn">
+                <b>02 </b> days</div>
+              <div class="event__down__timer_hour event__down__timer_btn">
+                <b>08 </b>hrs</div>
+              <div class="event__down__timer_min event__down__timer_btn">
+                <b>56 </b> min</div>
+            </div>
+            <a href="" class="event__down__more">More</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event__buttons">
+            <a href="" class="button button_red">SCAM</a>
+            <a href="" class="button button_blue">CURRENT</a>
+          </div>
+          <div class="event__icon">
+            <img src="images/png/image_3.png">
+          </div>
+          <div class="event__name event__line">Decentralized Loan Collateral</div>
+          <div class="event__info event__line">
+            <div class="event__info_base"> Base: Ethereum |
+              <span>Whitepaper </span>
+            </div>
+            <div class="event__info_site"> Website:
+              <a href="">http://www.theflik.io/ </a>
+            </div>
+          </div>
+          <div class="event__description event__line">End-to-end entertainment ecosystem for creative projects to be funded, filmed, distributed, and paid
+          </div>
+          <div class="event__ico event__line">
+            <span>ICO:</span> 540,000,000 FLiK of 600,000,000
+            <br> 20/08/2017 00:00:00 UTC - 20/09/2017
+          </div>
+          <div class="event__down clearfix">
+            <div class="event__down__timer active">
+              <div class="event__down__timer_day event__down__timer_btn">
+                <b>12 </b> days</div>
+              <div class="event__down__timer_hour event__down__timer_btn">
+                <b>08 </b>hrs</div>
+              <div class="event__down__timer_min event__down__timer_btn">
+                <b>56 </b> min</div>
+            </div>
+            <a href="" class="event__down__more">More</a>
+          </div>
+        </div>
+      </div>
+      <button class="button button_transparent">LOAD MORE EVENTS</button>
+
+
     </div>
-    <!-- end sorting -->
 
-    <div class="event-list event-list_3">
-      <div class="event">
-        <div class="event__buttons">
-          <a href="" class="button button_red">SCAM</a>
-          <a href="" class="button button_blue">CURRENT</a>
-        </div>
-        <div class="event__icon">
-          <img src="images/png/image_1.png">
-        </div>
-        <div class="event__name event__line">Decentralized Loan Collateral</div>
-        <div class="event__info event__line">
-          <div class="event__info_base"> Base: Ethereum | <span>Whitepaper </span></div>
-          <div class="event__info_site"> Website: <a href="">http://www.theflik.io/ </a></div>
-        </div>
-        <div class="event__description event__line">End-to-end entertainment ecosystem for creative projects to be funded,
-          filmed, distributed, and paid
-        </div>
-        <div class="event__ico event__line"><span>ICO:</span> 540,000,000 FLiK of 600,000,000 <br> 20/08/2017 00:00:00 UTC
-          - 20/09/2017
-        </div>
-        <div class="event__down clearfix">
-          <div class="event__down__timer active">
-            <div class="event__down__timer_day event__down__timer_btn"><b>12 </b> days</div>
-            <div class="event__down__timer_hour event__down__timer_btn"><b>08 </b>hrs</div>
-            <div class="event__down__timer_min event__down__timer_btn"><b>56 </b> min</div>
-          </div>
-          <a href="" class="event__down__more">More</a>
-        </div>
-      </div>
-      <div class="event">
-        <div class="event__buttons">
-          <a href="" class="button button_red">SCAM</a>
-          <a href="" class="button button_blue">CURRENT</a>
-        </div>
-        <div class="event__icon">
-          <img src="images/png/image_2.png">
-        </div>
-        <div class="event__name event__line">VIBEHub</div>
-        <div class="event__info event__line">
-          <div class="event__info_base"> Base: Ethereum | <span>Whitepaper </span></div>
-          <div class="event__info_site"> Website: <a href="">http://www.theflik.io/ </a></div>
-        </div>
-        <div class="event__description event__line">End-to-end entertainment ecosystem for creative projects to be funded,
-          filmed, distributed, and paid
-        </div>
-        <div class="event__ico event__line"><span>ICO:</span> 540,000,000 FLiK of 600,000,000 <br> 20/08/2017 00:00:00 UTC
-          - 20/09/2017
-        </div>
-        <div class="event__down clearfix">
-          <div class="event__down__timer active">
-            <div class="event__down__timer_day event__down__timer_btn"><b>02 </b> days</div>
-            <div class="event__down__timer_hour event__down__timer_btn"><b>08 </b>hrs</div>
-            <div class="event__down__timer_min event__down__timer_btn"><b>56 </b> min</div>
-          </div>
-          <a href="" class="event__down__more">More</a>
-        </div>
-      </div>
-      <div class="event">
-        <div class="event__buttons">
-          <a href="" class="button button_red">SCAM</a>
-          <a href="" class="button button_blue">CURRENT</a>
-        </div>
-        <div class="event__icon">
-          <img src="images/png/image_3.png">
-        </div>
-        <div class="event__name event__line">Decentralized Loan Collateral</div>
-        <div class="event__info event__line">
-          <div class="event__info_base"> Base: Ethereum | <span>Whitepaper </span></div>
-          <div class="event__info_site"> Website: <a href="">http://www.theflik.io/ </a></div>
-        </div>
-        <div class="event__description event__line">End-to-end entertainment ecosystem for creative projects to be funded,
-          filmed, distributed, and paid
-        </div>
-        <div class="event__ico event__line"><span>ICO:</span> 540,000,000 FLiK of 600,000,000 <br> 20/08/2017 00:00:00 UTC
-          - 20/09/2017
-        </div>
-        <div class="event__down clearfix">
-          <div class="event__down__timer active">
-            <div class="event__down__timer_day event__down__timer_btn"><b>12 </b> days</div>
-            <div class="event__down__timer_hour event__down__timer_btn"><b>08 </b>hrs</div>
-            <div class="event__down__timer_min event__down__timer_btn"><b>56 </b> min</div>
-          </div>
-          <a href="" class="event__down__more">More</a>
-        </div>
-      </div>
-      <div class="event">
-        <div class="event__buttons">
-          <a href="" class="button button_red">SCAM</a>
-          <a href="" class="button button_blue">CURRENT</a>
-        </div>
-        <div class="event__icon">
-          <img src="images/png/image_1.png">
-        </div>
-        <div class="event__name event__line">Decentralized Loan Collateral</div>
-        <div class="event__info event__line">
-          <div class="event__info_base"> Base: Ethereum | <span>Whitepaper </span></div>
-          <div class="event__info_site"> Website: <a href="">http://www.theflik.io/ </a></div>
-        </div>
-        <div class="event__description event__line">End-to-end entertainment ecosystem for creative projects to be funded,
-          filmed, distributed, and paid
-        </div>
-        <div class="event__ico event__line"><span>ICO:</span> 540,000,000 FLiK of 600,000,000 <br> 20/08/2017 00:00:00 UTC
-          - 20/09/2017
-        </div>
-        <div class="event__down clearfix">
-          <div class="event__down__timer active">
-            <div class="event__down__timer_day event__down__timer_btn"><b>12 </b> days</div>
-            <div class="event__down__timer_hour event__down__timer_btn"><b>08 </b>hrs</div>
-            <div class="event__down__timer_min event__down__timer_btn"><b>56 </b> min</div>
-          </div>
-          <a href="" class="event__down__more">More</a>
-        </div>
-      </div>
-      <div class="event">
-        <div class="event__buttons">
-          <a href="" class="button button_red">SCAM</a>
-          <a href="" class="button button_blue">CURRENT</a>
-        </div>
-        <div class="event__icon">
-          <img src="images/png/image_2.png">
-        </div>
-        <div class="event__name event__line">VIBEHub</div>
-        <div class="event__info event__line">
-          <div class="event__info_base"> Base: Ethereum | <span>Whitepaper </span></div>
-          <div class="event__info_site"> Website: <a href="">http://www.theflik.io/ </a></div>
-        </div>
-        <div class="event__description event__line">End-to-end entertainment ecosystem for creative projects to be funded,
-          filmed, distributed, and paid
-        </div>
-        <div class="event__ico event__line"><span>ICO:</span> 540,000,000 FLiK of 600,000,000 <br> 20/08/2017 00:00:00 UTC
-          - 20/09/2017
-        </div>
-        <div class="event__down clearfix">
-          <div class="event__down__timer active">
-            <div class="event__down__timer_day event__down__timer_btn"><b>02 </b> days</div>
-            <div class="event__down__timer_hour event__down__timer_btn"><b>08 </b>hrs</div>
-            <div class="event__down__timer_min event__down__timer_btn"><b>56 </b> min</div>
-          </div>
-          <a href="" class="event__down__more">More</a>
-        </div>
-      </div>
-      <div class="event">
-        <div class="event__buttons">
-          <a href="" class="button button_red">SCAM</a>
-          <a href="" class="button button_blue">CURRENT</a>
-        </div>
-        <div class="event__icon">
-          <img src="images/png/image_3.png">
-        </div>
-        <div class="event__name event__line">Decentralized Loan Collateral</div>
-        <div class="event__info event__line">
-          <div class="event__info_base"> Base: Ethereum | <span>Whitepaper </span></div>
-          <div class="event__info_site"> Website: <a href="">http://www.theflik.io/ </a></div>
-        </div>
-        <div class="event__description event__line">End-to-end entertainment ecosystem for creative projects to be funded,
-          filmed, distributed, and paid
-        </div>
-        <div class="event__ico event__line"><span>ICO:</span> 540,000,000 FLiK of 600,000,000 <br> 20/08/2017 00:00:00 UTC
-          - 20/09/2017
-        </div>
-        <div class="event__down clearfix">
-          <div class="event__down__timer active">
-            <div class="event__down__timer_day event__down__timer_btn"><b>12 </b> days</div>
-            <div class="event__down__timer_hour event__down__timer_btn"><b>08 </b>hrs</div>
-            <div class="event__down__timer_min event__down__timer_btn"><b>56 </b> min</div>
-          </div>
-          <a href="" class="event__down__more">More</a>
-        </div>
-      </div>
-    </div>
-    <button class="button button_transparent">LOAD MORE EVENTS</button>
+    <!--<div class="social">-->
+    <!--<a href="#" class="social__item social__item_twiter social__item_twiter-color">1</a>-->
+    <!--<a href="#" class="social__item social__item_facebook social__item_facebook-color">2</a>-->
+    <!--<a href="#" class="social__item social__item_pinterest social__item_pinterest-color">3</a>-->
+    <!--<a href="#" class="social__item social__item_google-plus social__item_google-plus-color">4</a>-->
+    <!--<a href="#" class="social__item social__item_vk social__item_vk-color">5</a>-->
+    <!--<a href="#" class="social__item social__item_telegram social__item_telegram-color">6</a>-->
+    <!--</div>-->
 
 
-  </div>
-
-  <!--<div class="social">-->
-  <!--<a href="#" class="social__item social__item_twiter social__item_twiter-color">1</a>-->
-  <!--<a href="#" class="social__item social__item_facebook social__item_facebook-color">2</a>-->
-  <!--<a href="#" class="social__item social__item_pinterest social__item_pinterest-color">3</a>-->
-  <!--<a href="#" class="social__item social__item_google-plus social__item_google-plus-color">4</a>-->
-  <!--<a href="#" class="social__item social__item_vk social__item_vk-color">5</a>-->
-  <!--<a href="#" class="social__item social__item_telegram social__item_telegram-color">6</a>-->
-  <!--</div>-->
-
-
-  <section class="contact-us">
-    <h2 class="contact-us__title">CONTACT US</h2>
-    <form class="contact-us__form" action="/" method="get">
-      <div class="contact-us__line">
-        <input type="text" class="contact-us__input contact-us__input_name" placeholder="Enter your name">
-        <input type="text" class="contact-us__input contact-us__input_email" placeholder="Enter your e-mail">
-      </div>
-      <div class="contact-us__line">
-        <textarea name="text" class="contact-us__textarea" placeholder="Please, type your text here"></textarea>
-      </div>
-      <button type="submit" class="contact-us__btn">send</button>
-    </form>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-
-      <div class="footer__logo">
-        <img src="images/svg/logo2.svg" alt="logo 2" class="footer__logo-img">
-      </div>
-
-
-      <form action="/" class="form-footer" method="get">
-        <div class="form-footer__title">WANT TO GET RECENT UPDATES?</div>
-        <div class="form-footer__box">
-          <input type="text" class="form-footer__name" placeholder="Enter your name">
-          <input type="text" class="form-footer__email" placeholder="Enter your e-mail">
-          <button type="submit" class="form-footer__subscribe">SUBSCRIBE</button>
+    <section class="contact-us">
+      <h2 class="contact-us__title">CONTACT US</h2>
+      <form class="contact-us__form" action="/" method="get">
+        <div class="contact-us__line">
+          <input type="text" class="contact-us__input contact-us__input_name" placeholder="Enter your name">
+          <input type="text" class="contact-us__input contact-us__input_email" placeholder="Enter your e-mail">
         </div>
+        <div class="contact-us__line">
+          <textarea name="text" class="contact-us__textarea" placeholder="Please, type your text here"></textarea>
+        </div>
+        <button type="submit" class="contact-us__btn">send</button>
       </form>
+    </section>
 
-      <div class="social footer__social">
-        <a href="#" class="social__item social__item_twiter">1</a>
-        <a href="#" class="social__item social__item_telegram">2</a>
-        <a href="#" class="social__item social__item_facebook">3</a>
-        <a href="#" class="social__item social__item_vk">4</a>
-        <a href="#" class="social__item social__item_medium">5</a>
+    <footer class="footer">
+      <div class="container">
+
+        <div class="footer__logo">
+          <img src="images/svg/logo2.svg" alt="logo 2" class="footer__logo-img">
+        </div>
+
+
+        <form action="/" class="form-footer" method="get">
+          <div class="form-footer__title">WANT TO GET RECENT UPDATES?</div>
+          <div class="form-footer__box">
+            <input type="text" class="form-footer__name" placeholder="Enter your name">
+            <input type="text" class="form-footer__email" placeholder="Enter your e-mail">
+            <button type="submit" class="form-footer__subscribe">SUBSCRIBE</button>
+          </div>
+        </form>
+
+        <div class="social footer__social">
+          <a href="#" class="social__item social__item_twiter">1</a>
+          <a href="#" class="social__item social__item_telegram">2</a>
+          <a href="#" class="social__item social__item_facebook">3</a>
+          <a href="#" class="social__item social__item_vk">4</a>
+          <a href="#" class="social__item social__item_medium">5</a>
+        </div>
+
       </div>
+    </footer>
 
-    </div>
-  </footer>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/popper.js/dist/umd/popper.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="/bower_components/jquery/dist/jquery.js"></script>
-  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <!-- endbuild -->
 
-  <!-- build:js scripts/plugins.js -->
-  <!-- endbuild -->
-
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

@@ -1,9 +1,8 @@
 @import "variables.scss";
-
 .header {
   background: #4198D4;
-  margin-bottom: 20px;
   padding: 23px 0;
+  padding-bottom: 20px;
   &__logo {
     width: 104px;
     overflow: hidden;
@@ -12,13 +11,25 @@
       width: 100%;
     }
   }
+  &__mobile-menu {
+    z-index: 1;
+    background: #4198D4;
+    width: 100%;
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+  }
   &__hamburger {
-    width: 15px;
+    width: 22px;
     height: 34px;
     background: url("../images/svg/hamburger.svg") center no-repeat;
     background-size: 22px 15px;
     &:hover {
       cursor: pointer;
+    }
+    &_close {
+      background: url("../images/svg/hamburger.svg") center no-repeat;
     }
   }
   &__buttons {
@@ -26,6 +37,7 @@
   }
   &__menu {
     display: none;
+    flex-direction: column;
   }
   &__language {
     display: flex;
@@ -40,27 +52,53 @@
       }
     }
   }
+  &__mobile-language {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 20px 40px;
+    border-top: 1px solid white;
+    a {
+      margin: 0 5px;
+      &:hover {
+        color: white;
+      }
+    }
+  }
   &__nav {
     margin: 0;
     padding: 0;
     list-style-type: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 16px;
     li {
-      margin-right: 30px;
       &:last-child {
         margin-right: 0;
+        a {
+          border-bottom: 1px solid white;
+        }
       }
     }
     a {
       display: block;
       text-transform: uppercase;
       color: white;
+      font-size: 13px;
+      font-weight: 400;
+      border-top: 1px solid white;
+      padding: 10px 40px;
       &:hover {
         color: white;
       }
     }
+  }
+  &__mobile-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
   }
   &__button {
     text-transform: uppercase;
@@ -68,11 +106,13 @@
     font-size: 14px;
     padding: 8px 20px;
     border-radius: 5px;
+    text-align: center;
     border: 1px solid white;
     &:hover {
       color: white;
     }
     &_event {
+      margin-top: 10px;
       color: #4BC3EF;
       background-color: white;
       &:hover {
@@ -86,17 +126,28 @@
     max-height: 154px;
     background: linear-gradient(135deg, #308CD0, #4BC3EF), url("../images/header_bg.png") center repeat-x;
     background-blend-mode: overlay;
-    background-size: 150%;
+    background-size: 1300px;
+    padding: 0;
+    padding-top: 40px;
     &__logo {
       width: 117px;
     }
+    &__mobile-menu {
+      display: none;
+    }
     &__hamburger {
+      display: none;
+    }
+    &__mobile-buttons {
       display: none;
     }
     &__buttons {
       display: block;
       margin-top: 0;
       padding: 8px 0 0 0;
+      &_event {
+        margin-top: 0px;
+      }
     }
     &__button {
       font-size: 10px;
@@ -106,8 +157,18 @@
     &__nav {
       font-size: 10px;
       padding-top: 13px;
+      flex-direction: row;
       li {
         margin-right: 17px;
+        &:last-child {
+          a {
+            border: none;
+          }
+        }
+        a {
+          border: none;
+          padding: 0;
+        }
       }
     }
     &__language {
@@ -121,12 +182,22 @@
       justify-content: space-between;
     }
   }
+  @media screen and (min-width: 992px) {
+    &__menu {
+      margin-top: 5px;
+    }
+  }
   @media screen and (min-width: 1200px) {
+    background-size: 1550px;
+    min-height: 175px;
     &__logo {
       width: 175px;
     }
     &__buttons {
       padding: 20px 0 0 0;
+    }
+    &__menu {
+      margin-top: 20px;
     }
     &__button {
       font-size: 14px;
@@ -140,4 +211,8 @@
       font-size: 16px;
     }
   }
+}
+
+.mobile-menu-open {
+  max-height: 380px;
 }

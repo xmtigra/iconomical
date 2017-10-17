@@ -1,6 +1,5 @@
 @import "_normalize.scss";
 @import "_fonts.scss";
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -68,9 +67,11 @@ a {
   }
 }
 
-.clearfix, .container {
+.clearfix,
+.container {
   zoom: 1;
-  &:before, &:after {
+  &:before,
+  &:after {
     content: "";
     display: table;
   }
