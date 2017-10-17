@@ -1,10 +1,10 @@
-.submit-event {
+.submit {
   background: #fff;
   padding: 20px 35px 25px;
   margin: 35px 0;
-  h1.title-event{
+  h1.title{
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
     color: #54AAE5;
   }
   .sub-title{
@@ -14,6 +14,11 @@
     span{
       color: #54AAE5;
     }
+  }
+  .description{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 24px;
   }
   &__form {
     margin: 0 auto;
@@ -136,7 +141,7 @@
     border-radius: 5px;
     text-align: center;
     color: #fff;
-    max-width: 185px;
+    width: 185px;
     align-items: center;
     background: #7CBDEB;
     font-weight: 700;
