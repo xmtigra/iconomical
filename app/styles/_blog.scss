@@ -59,6 +59,43 @@
       background-size: 13px 13px;
     }
   }
+  &__share {
+    h1.title {
+      font-size: 24px;
+      line-height: 1;
+      color: #676767;
+      font-weight: 300;
+    }
+    margin-top: 20px;
+  }
+  &__social-list {
+    margin: 0;
+    list-style-image: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      width: 38px;
+      height: 38px;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
   p {
     font-size: 19px;
     line-height: 1.4;
