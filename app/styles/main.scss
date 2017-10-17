@@ -1,7 +1,6 @@
 @import "variables.scss";
 // base
 @import "_global.scss";
-
 // components
 @import "_currency.scss";
 @import "_header.scss";
@@ -13,9 +12,7 @@
 @import "_form.scss";
 @import "_contact-us.scss";
 @import "_sorting.scss";
-
-
-
+@import "_about-us.scss";
 .site-main {
   margin-bottom: 20px;
   background: #fff;
@@ -27,7 +24,8 @@
     line-height: 1;
     color: #4DA5E2;
   }
-  b, strong {
+  b,
+  strong {
     font-weight: 600;
   }
   p {
@@ -39,7 +37,7 @@
     width: 100%;
     border: none;
     font-size: 17px;
-    td{
+    td {
       padding: 10px;
     }
     a {
@@ -52,4 +50,3 @@
     }
   }
 }
-
