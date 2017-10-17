@@ -1,0 +1,25 @@
+.hashtags {
+  display: flex;
+  font-size: 16px;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 12px 30px;
+  align-items: center;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: flex-start;
+  }
+  &__item {
+    cursor: pointer;
+    list-style-type: none;
+    color: #3694DB;
+    margin-right: 15px;
+  }
+}
