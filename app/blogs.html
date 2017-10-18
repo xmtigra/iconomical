@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>header</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <link rel="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+  <div class="header">
+    <div class="container ">
+      <div class="flex flex-row">
+        <a href="" class="header__logo">
+          <img src="images/svg/logo3.svg" alt="Iconomical logo">
+        </a>
+        <div class="header__hamburger"></div>
+        <!-- не переписувати блок currency - хіба що обгоратти -->
+        <div class="currency">
+          <div class="currency__item">
+            <div class="currency__name">BTC</div>
+            <div class="currency__price">$ 4,006.46</div>
+            <div class="currency__change currency__change_negative">-0.04%</div>
+          </div>
+          <div class="currency__item">
+            <div class="currency__name">BCH</div>
+            <div class="currency__price">$ 525.05</div>
+            <div class="currency__change currency__change_positive">1.02%</div>
+          </div>
+          <div class="currency__item">
+            <div class="currency__name">ETH</div>
+            <div class="currency__price">$ 289.09</div>
+            <div class="currency__change currency__change_positive">2.51%</div>
+          </div>
+          <div class="currency__item">
+            <div class="currency__name">DEF</div>
+            <div class="currency__price">$ 8889.09</div>
+            <div class="currency__change currency__change_positive">92.51%</div>
+          </div>
+        </div>
+        <!-- не переписувати блок currency - хіба що обгоратти -->
+        <div class="header__buttons">
+          <a href="" class="header__button header__button_post">Submit post</a>
+          <a href="" class="header__button header__button_event">Submit event</a>
+        </div>
+
+
+      </div>
+      <div class="header__menu">
+        <nav>
+          <ul class="header__nav">
+            <li>
+              <a href="">Main</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">KNOWLEDGE BASE</a>
+            </li>
+            <li>
+              <a href="">ABOUT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__language">
+          <div>LANGUAGE:</div>
+          <a href="#">RU</a>|
+          <a href="#">ENG</a>
+        </div>
+      </div>
+    </div>
+    <div class="header__mobile-menu">
+      <div class="mobile-currency">
+        <div class="mobile-currency__item">
+          <div class="mobile-currency__name">BTC</div>
+          <div class="mobile-currency__price">$ 4,006.46</div>
+          <div class="mobile-currency__change mobile-currency__change_negative">-0.04%</div>
+        </div>
+        <div class="mobile-currency__item">
+          <div class="mobile-currency__name">BCH</div>
+          <div class="mobile-currency__price">$ 525.05</div>
+          <div class="mobile-currency__change mobile-currency__change_positive">1.02%</div>
+        </div>
+        <div class="mobile-currency__item">
+          <div class="mobile-currency__name">ETH</div>
+          <div class="mobile-currency__price">$ 289.09</div>
+          <div class="mobile-currency__change mobile-currency__change_positive">2.51%</div>
+        </div>
+        <div class="mobile-currency__item">
+          <div class="mobile-currency__name">DEF</div>
+          <div class="mobile-currency__price">$ 8889.09</div>
+          <div class="mobile-currency__change mobile-currency__change_positive">92.51%</div>
+        </div>
+      </div>
+      <nav>
+        <ul class="header__nav">
+          <li>
+            <a href="">Main</a>
+          </li>
+          <li>
+            <a href="">Blog</a>
+          </li>
+          <li>
+            <a href="">KNOWLEDGE BASE</a>
+          </li>
+          <li>
+            <a href="">ABOUT</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__mobile-buttons">
+        <a href="" class="header__button header__button_post">Submit post</a>
+        <a href="" class="header__button header__button_event">Submit event</a>
+      </div>
+      <div class="header__mobile-language">
+        <div>LANGUAGE:</div>
+        <a href="#">RU</a>|
+        <a href="#">ENG</a>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container ">
+      <div class="blogs-all">
+        <div class="sorting">
+          <div class="sorting__name">Sort by:</div>
+          <div class="sorting__list">
+            <a class="sorting__item sorting__item_active">all</a>
+            <a class="sorting__item">top weekly</a>
+            <a class="sorting__item">top monthly</a>
+            <a class="sorting__item">top yearly</a>
+          </div>
+        </div>
+        <div class="search">
+          <form class="search-form" action="">
+            <label>
+              <span class="screen-reader-text"></span>
+              <input type="search" class="search-field" placeholder="search by typing in here" value="" name="s" autocomplete="off">
+            </label>
+            <input type="submit" class="search-submit" value="Шукати">
+          </form>
+        </div>
+
+        <div class="hashtags">
+          <div class="hashtags__list">
+            <a class="hashtags__item">#hashtag</a>
+            <a class="hashtags__item">#ico</a>
+            <a class="hashtags__item">#bitcoin</a>
+            <a class="hashtags__item">#etereum</a>
+            <a class="hashtags__item">#event</a>
+            <a class="hashtags__item">#tockens</a>
+            <a class="hashtags__item">#tockens</a>
+            <a class="hashtags__item">#tockens</a>
+            <a class="hashtags__item">#tockens</a>
+            <a class="hashtags__item">#tockens</a>
+          </div>
+        </div>
+        <div class="blogs-all__column">
+          <div class="blogs-all__column_item">
+            <div class="blogs-all__column_item__img-wrapper">
+              <img src="./images/png/blog-img.png" alt="">
+            </div>
+            <h1 class="entry-title">Decentralized some words to show that this works</h1>
+            <div class="blogs-all__column_item__stats">
+              <div class="blogs-all__column_item__stats-date">21 SEPTEMBER, 2017</div>
+              <div class="blogs-all__column_item__stats-comments">14</div>
+              <div class="blogs-all__column_item__stats-views">800</div>
+            </div>
+            <p>Aenean non nibh nisl. Nulla sed tortor id ligula gravida convallis sed eget orci. In vulputate ante eu tincidunt scelerisque. Etiam non vestibulum ligula, nec porta nibh. Vivamus malesuada sagittis feugiat. Duis imperdiet et massa vel molestie. Proin iaculis aliquet finibus.</p>
+            <div class="hashtags__list">
+              <a class="hashtags__item hashtags__item_border">#hashtag</a>
+              <a class="hashtags__item hashtags__item_border">#ico</a>
+              <a class="hashtags__item hashtags__item_border">#bitcoin</a>
+            </div>
+          </div>
+          <div class="blogs-all__column_item">
+            <div class="blogs-all__column_item__img-wrapper">
+              <img src="./images/png/blog-img.png" alt="">
+            </div>
+            <h1 class="entry-title">Decentralized some words to show that this works</h1>
+            <div class="blogs-all__column_item__stats">
+              <div class="blogs-all__column_item__stats-date">21 SEPTEMBER, 2017</div>
+              <div class="blogs-all__column_item__stats-comments">14</div>
+              <div class="blogs-all__column_item__stats-views">800</div>
+            </div>
+            <p>Aenean non nibh nisl. Nulla sed tortor id ligula gravida convallis sed eget orci. In vulputate ante eu tincidunt scelerisque. Etiam non vestibulum ligula, nec porta nibh. Vivamus malesuada sagittis feugiat. Duis imperdiet et massa vel molestie. Proin iaculis aliquet finibus.</p>
+            <div class="hashtags__list">
+              <a class="hashtags__item hashtags__item_border">#hashtag</a>
+              <a class="hashtags__item hashtags__item_border">#ico</a>
+              <a class="hashtags__item hashtags__item_border">#bitcoin</a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="blogs-all__top"></div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__logo">
+        <img src="images/svg/logo2.svg" alt="logo 2" class="footer__logo-img">
+      </div>
+
+
+      <form action="/" class="form-footer" method="get">
+        <div class="form-footer__title">WANT TO GET RECENT UPDATES?</div>
+        <div class="form-footer__box">
+          <input type="text" class="form-footer__name" placeholder="Enter your name">
+          <input type="text" class="form-footer__email" placeholder="Enter your e-mail">
+          <button type="submit" class="form-footer__subscribe">SUBSCRIBE</button>
+        </div>
+      </form>
+
+      <div class="social footer__social">
+        <a href="#" class="social__item social__item_twiter">1</a>
+        <a href="#" class="social__item social__item_telegram">2</a>
+        <a href="#" class="social__item social__item_facebook">3</a>
+        <a href="#" class="social__item social__item_vk">4</a>
+        <a href="#" class="social__item social__item_medium">5</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>
