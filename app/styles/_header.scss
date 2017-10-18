@@ -74,10 +74,23 @@
     font-size: 14px;
     padding: 20px 40px;
     border-top: 1px solid white;
-    a {
-      margin: 0 5px;
-      &:hover {
-        color: white;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        position: relative;
+        a {
+          margin: 0 5px;
+          &:hover {
+            color: white;
+          }
+        }
+        &:first-child:after {
+          content: "|";
+          position: absolute;
+        }
       }
     }
   }
