@@ -107,8 +107,10 @@
     }
   }
 }
+
 .blogs-all {
   display: block;
+  margin-bottom: 20px;
   .sorting {
     width: 100%;
     &__name {
@@ -128,7 +130,7 @@
     position: relative;
     label {
       padding-right: 25px;
-      input[type='search']{
+      input[type='search'] {
         background: none;
         color: #000;
         border: none;
@@ -146,16 +148,16 @@
       background-size: 14px 14px;
       background-image: url(../images/svg/search.svg);
     }
-    .screen-reader-text{
+    .screen-reader-text {
       display: none;
     }
-    .search-submit{
+    .search-submit {
       display: none;
     }
   }
   &__column {
     width: 100%;
-    &_item{
+    &_item {
       padding: 20px 40px;
       width: 100%;
       background: #fff;
@@ -181,7 +183,7 @@
       .entry-title {
         font-size: 16px;
         color: #4D4D4D;
-        &:hover{
+        &:hover {
           color: #4198D4;
         }
       }
