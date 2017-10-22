@@ -1,0 +1,84 @@
+.site-main {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 40px;
+  color: #464646;
+  h1.entry-title {
+    margin: 0 0 40px 0;
+    font-size: 24px;
+    line-height: 1;
+    color: #4DA5E2;
+  }
+  b,
+  strong {
+    font-weight: 600;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+  table {
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    td {
+      padding: 10px;
+    }
+    a {
+      display: block;
+      color: #464646;
+      line-height: 1.4;
+      &:hover {
+        color: #4DA5E2;
+      }
+    }
+  }
+}
+
+.contact-us__form br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us__line .wpcf7-form-control-wrap {
+    float: left;
+    width: 49%;
+    display: block;
+  }
+  .wpcf7-form-control-wrap.your-message {
+    width: 100% !important;
+  }
+  .wpcf7-form-control-wrap.your-email {
+    float: right;
+  }
+  .contact-us__input {
+    width: 100% !important;
+    float: none !important;
+  }
+}
+
+.wpcf7-not-valid-tip {
+  display: block;
+  margin-bottom: 15px;
+  color: #E68E94 !important;
+}
+
+.wpcf7-validation-errors {
+  max-width: 570px;
+  margin: 0 auto !important;
+  color: #E68E94 !important;
+  border: none !important;
+}
+
+[lang="en-US"] li.menu-item-63 {
+  display: none;
+}
+
+[lang="ru-RU"] li.menu-item-67 {
+  display: none;
+}
+
+.wpcf7-validation-errors {
+  display: none !important;
+}
