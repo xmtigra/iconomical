@@ -413,3 +413,12 @@
     }
   }
 }
+@media screen and (min-width: 1024px) {
+  .column {
+     &__navigation{
+      .button{
+        line-height: 18px;
+      }
+    }
+  }
+}
