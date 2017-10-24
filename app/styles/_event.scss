@@ -86,7 +86,7 @@
     &__timer {
       display: inline-block;
       &_btn {
-        width: 55px;
+        width: 52px;
         height: 30px;
         padding: 0 5px;
         color: #fff;
@@ -143,6 +143,13 @@
     }
     &__ico {
       font-size: 14px;
+    }
+    &__down {
+      &__timer{
+        &_btn {
+          width: 55px;
+        }
+      }
     }
   }
   @media screen and (min-width: 1200px) {

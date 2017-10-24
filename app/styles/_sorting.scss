@@ -1,6 +1,6 @@
 .sorting {
   display: flex;
-  font-size: 16px;
+  font-size: 12px;
   overflow: hidden;
   line-height: 20px;
   border-radius: 8px;
@@ -38,6 +38,11 @@
     }
     &:hover {
       color: #3694DB;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .sorting{
+      font-size: 16px;
     }
   }
 }

@@ -3,7 +3,7 @@
   text-transform: uppercase;
   color: white;
   font-size: 12px;
-  min-width: 85px;
+  min-width: 75px;
   border-radius: 5px;
   margin-left: 5px;
   line-height: 27px;
@@ -49,6 +49,11 @@
       cursor: pointer;
       color: #fff;
       border-color: #71DBC9;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .sorting{
+      min-width: 85px;
     }
   }
 }
